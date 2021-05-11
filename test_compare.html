@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+	<title>CSS Light vs Dark comparison</title>
+
+	<style>
+		body {
+			overflow: hidden;
+		}
+
+		div.frames > iframe {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			
+			width: 50%;
+			height: 100%;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="frames">
+		<iframe src="test_css_light.html"></iframe>
+		<iframe src="test_css_dark.html" style="left: 50%"></iframe>
+	</div>
+</body>

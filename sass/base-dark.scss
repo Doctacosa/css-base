@@ -1,0 +1,42 @@
+
+$color-bg: #000000;
+$color-header: #DDDDDD;
+$color-text: #BBBBBB;
+
+$hr-color: #AAA !default;
+
+$datalist-bg-color: #444444 !default;
+
+$button-bg-color: #444 !default;
+$button-bg-color-disabled: #222 !default;
+$button-border-color: #999999 !default;
+$button-border-color-disabled: #666666 !default;
+$button-color: #EEE !default;
+$button-color-disabled: #999 !default;
+
+$input-border-color: #777;
+$input-bg-color: #222222;
+$input-color: #EEEEEE;
+$input-active-color: #0088FF !default;
+$input-marker-color: #DDD !default;
+$input-marker-active-color: #FFF !default;
+$input-box-shadow: 0 0 .25rem rgba(255, 255, 255, .3) !default;
+
+$input-disabled-border-color: #777 !default;
+$input-disabled-bg-color: #444 !default;
+$input-disabled-color: #999 !default;
+$input-disabled-active-color: #557788 !default;
+$input-disabled-marker-color: #999999 !default;
+$input-disabled-marker-active-color: #CCC !default;
+$input-disabled-box-shadow: 0 0 .25rem rgba(0, 0, 0, .3) !default;
+
+$alert-color-adjust: 50% !default;
+$alert-bg-color-adjust: -60% !default;
+$alert-input-bg-color-adjust: -90% !default;
+
+$error-border-color: #AA0000;
+$error-bg-color: #330000;
+$error-color: #DDDDDD;
+
+
+@import "base";

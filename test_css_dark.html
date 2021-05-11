@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>CSS Base (Dark) - HTML display test</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<style>
+			@import "normalize.css";
+			@import "base-dark.css";
+
+			.demo {
+				float: left;
+				width: 48%;
+				margin: 5px;
+				padding: 5px;
+				border: 1px dotted #999999;
+			}
+
+			.demo3 {
+				width: 32%; height: 100px; 
+			}
+		</style>
+	</head>
+<body>
+
+<h1>H1 header</h1>
+<h2>H2 header</h2>
+<h3>H3 header</h3>
+<h4>H4 header</h4>
+<h5>H5 header</h5>
+<h6>H6 header</h6>
+
+<p>This is a paragraph. <a href="https://www.yahoo.ca/">There is a link</a> in this sentence.</p>
+
+<hr />
+
+<p>This is another paragraph.</p>
+
+<div class="demo">
+	<ul>
+		<li>List</li>
+		<li>Unnumbered</li>
+		<li>And three items</li>
+	</ul>
+</div>
+
+<div class="demo">
+	<ol>
+		<li>List</li>
+		<li>This one is numbered</li>
+		<li>Also three items</li>
+	</ol>
+</div>
+
+<table class="data_list">
+	<tr>
+		<th>Header 1</th>
+		<th>Header 2</th>
+		<th>Header 3</th>
+	</tr>
+	<tr>
+		<td>Cell 1</td>
+		<td>Cell 2</td>
+		<td>Cell 3</td>
+	</tr>
+	<tr>
+		<td>Cell 4</td>
+		<td>Cell 5</td>
+		<td>Cell 6</td>
+	</tr>
+</table>
+
+
+<form class="bd-example">
+	<fieldset>
+		<legend>Example legend</legend>
+
+		<div class="demo">
+			<label for="input">Example input</label>
+			<input type="text" id="input" placeholder="Example input" />
+			<input type="text" id="input_disabled" value="Disabled" disabled />
+		</div>
+
+		<div class="demo">
+			<label for="select">Example select</label>
+			<select id="select">
+				<option value="">Choose...</option>
+				<optgroup label="Option group 1">
+					<option value="">Option 1</option>
+					<option value="">Option 2</option>
+					<option value="">Option 3</option>
+				</optgroup>
+				<optgroup label="Option group 2">
+					<option value="">Option 4</option>
+					<option value="">Option 5</option>
+					<option value="">Option 6</option>
+				</optgroup>
+			</select>
+		</div>
+
+		<div class="demo">
+			<label>
+				<input type="checkbox" value="" />
+				Unchecked
+			</label>
+
+			<label>
+				<input type="checkbox" value="" checked />
+				Checked
+			</label>
+
+			<label>
+				<input type="checkbox" value="" disabled />
+				Unchecked dis
+			</label>
+
+			<label>
+				<input type="checkbox" value="" disabled checked />
+				Checked dis
+			</label>
+		</div>
+		
+		<div class="demo">
+			<label>
+				<input type="checkbox" value="" class="toggle" />
+				Unchecked
+			</label>
+
+			<label>
+				<input type="checkbox" value="" class="toggle" checked />
+				Checked
+			</label>
+
+			<label>
+				<input type="checkbox" value="" class="toggle" disabled />
+				Unchecked dis
+			</label>
+
+			<label>
+				<input type="checkbox" value="" class="toggle" disabled checked />
+				Checked dis
+			</label>
+		</div>
+
+		<div class="demo">
+			<label>
+				<input type="radio" name="optionsRadios1" value="option1" checked />
+				Unselected
+			</label>
+			<label>
+				<input type="radio" name="optionsRadios1" value="option2" />
+				Selected
+			</label>
+			<label>
+				<input type="radio" name="optionsRadios2" value="option3" disabled />
+				Unselected dis
+			</label>
+			<label>
+				<input type="radio" name="optionsRadios2" value="option4" checked disabled />
+				Selected dis
+			</label>
+		</div>
+	</fieldset>
+
+	<div class="demo">
+		<label for="textarea">Textarea</label>
+		<textarea id="textarea" rows="3"></textarea>
+		<textarea id="textarea" rows="3" disabled>Nothing to do here</textarea>
+	</div>
+
+	<div class="demo">
+		<label for="date">Example date</label>
+		<input type="date" id="date" />
+	</div>
+
+	<div class="demo">
+		<label for="week">Example week</label>
+		<input type="week" id="week" />
+	</div>
+
+	<div class="demo">
+		<label for="month">Example month</label>
+		<input type="month" id="month" />
+	</div>
+
+	<div class="demo">
+		<label for="time">Example time</label>
+		<input type="time" id="time" />
+	</div>
+
+	<div class="demo">
+		<label for="datetime-local">Example datetime-local</label>
+		<input type="datetime-local" id="datetime-local" />
+	</div>
+
+	<div class="demo">
+		<label for="output">Example output</label>
+		<output name="result" id="output">100</output>
+	</div>
+
+	<div class="demo">
+		<label>
+			Example color picker
+			<input type="color" value="#AA0000" />
+		</label>
+	</div>
+
+	<div class="demo">
+		<progress max="100"><span>30</span>%</progress>
+		<progress value="0" max="100"><span>0</span>%</progress>
+		<progress value="25" max="100"><span>25</span>%</progress>
+		<progress value="100" max="100"><span>100</span>%</progress>
+	</div>
+
+	<div class="demo">
+		<meter value="35" min="20" max="100" low="40" high="80" optimum="100">35</meter>
+		<meter value="50" min="20" max="100" low="40" high="80" optimum="100">50</meter>
+		<meter value="60" min="20" max="100" low="40" high="80" optimum="60">60</meter>
+		<meter value="100" min="20" max="100" low="40" high="80" optimum="60">100</meter>
+	</div>
+
+	<div class="demo">
+		<label>
+			Email
+			<input type="email" />
+		</label>
+	</div>
+
+	<div class="demo">
+		<label>
+			URL
+			<input type="url" />
+		</label>
+	</div>
+
+	<div class="demo">
+		<label>
+			File
+			<input type="file" />
+		</label>
+		<input type="file" disabled />
+	</div>
+
+	<div class="demo">
+		<label>
+			Number
+			<input type="number" />
+		</label>
+	</div>
+
+	<br style="clear:both" />
+
+	<div class="demo">
+		<button type="submit">Button submit</button>
+		<input type="submit" value="Input submit button" />
+		<input type="reset" value="Input reset button" />
+		<input type="button" value="Input button" />
+		<button type="submit" disabled="">Button disabled</button>
+	</div>
+
+</form>
+
+
+<br style="clear:both" />
+
+<div class="demo demo3" style="position: relative;">
+	<div class="full_center">Center this inside box</div>
+</div>
+
+<div class="demo demo3" style="position: relative;">
+	<p style="position: absolute; bottom: 0; right: 0; left: 0; top: 0;">Center this too</p>
+</div>
+
+<div class="demo demo3 full_center_child">
+	<div>And this</div>
+</div>
+
+
+<br style="clear:both" />
+<hr />
+
+<p>Horizontal form</p>
+
+<form class="form-horizontal">
+	<div class="form-group">
+		<label>Potato</label>
+		<input type="text" />
+		<div class="form-extra-padding">This is a required element.</div>
+	</div>
+
+	<div class="form-group">
+		<label>Soup</label>
+		<input type="text" />
+	</div>
+	
+	<div class="form-group">
+		<label>Password</label>
+		<input type="password" />
+	</div>
+</form>
+
+
+<p>Vertical form</p>
+
+<form class="form-vertical">
+	<div class="form-group">
+		<label>Potato</label>
+		<input type="text" />
+		<div class="form-extra-padding">This is a required element.</div>
+	</div>
+
+	<div class="form-group">
+		<label>Soup</label>
+		<input type="text" />
+	</div>
+	
+	<div class="form-group">
+		<label>Password</label>
+		<input type="password" />
+	</div>
+</form>
+
+<hr />
+
+<button class="alert-primary">Primary</button>
+<button class="alert-success">Success</button>
+<button class="alert-error">Error</button>
+<button class="alert-warning">Warning</button>
+<button class="alert-info">Info</button>
+
+<div style="display: flex; width: 100%; justify-content: space-around;">
+	<div class="alert-primary">Primary</div>
+	<div class="alert-success">Success</div>
+	<div class="alert-error">Error</div>
+	<div class="alert-warning">Warning</div>
+	<div class="alert-info">Info</div>
+</div>
+
+<br />
+
+<form class="form-horizontal">
+	<div class="form-group">
+		<label>Primary</label>
+		<span><input type="text" class="alert-primary" value="Primary" /></span>
+		<div class="form-extra"><button class="alert-primary">Button</button></div>
+	</div>
+	
+	<div class="form-group">
+		<label>Success</label>
+		<span><input type="text" class="alert-success" value="Success" /></span>
+		<div class="form-extra"><button class="alert-success">Button</button></div>
+	</div>
+	
+	<div class="form-group">
+		<label>Error</label>
+		<span><input type="text" class="alert-error" value="Error" /></span>
+		<div class="form-extra"><button class="alert-error">Button</button></div>
+	</div>
+	
+	<div class="form-group">
+		<label>Warning</label>
+		<span><input type="text" class="alert-warning" value="Warning" /></span>
+		<div class="form-extra"><button class="alert-warning">Button</button></div>
+	</div>
+	
+	<div class="form-group">
+		<label>Info</label>
+		<span><input type="text" class="alert-info" value="Info" /></span>
+		<div class="form-extra"><button class="alert-info">Button</button></div>
+	</div>
+	
+	<div class="form-group">
+		<label>Normal</label>
+		<span><input type="text" class="" value="Normal" /></span>
+		<div class="form-extra"><button class="">Button</button></div>
+	</div>
+</form>
+
+
+<!--
+	Styles:
+	https://twitter.com/i/events/994601867987619840
+	http://concrete-hardboard.glitch.me/
+
+	Tags HTML: https://html.spec.whatwg.org/multipage/
+	article: includes header; forum post, blog entry, interactive widget, sub comments to an article (nested)
+	aside: sidebar content, quotes
+	blockquote: quotes
+	figcaption
+	figure
+	footer: page or subsection, like a forum post, can have two footers per block
+	header: page or subsection, like a forum post
+	main: one element only, indicates the main body
+	mark: added highlight (as in emphasis or search results)
+	nav: major navigation blocks
+	section: thematic group (usually with a header), tabs, chapters
+	time: date or time	<time datetime="2011-11-18">November 18th</time>
+	details, summary
+-->
+
+</body></html>
