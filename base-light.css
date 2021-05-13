@@ -132,7 +132,7 @@ legend {
   margin: 0 0.3rem;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"], input[type="radio"] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -148,11 +148,7 @@ input[type="checkbox"] {
   transition: all .2s ease-in-out;
 }
 
-input[type="checkbox"]:checked {
-  /*	background: $input-active-color;*/
-}
-
-input[type="checkbox"]:after {
+input[type="checkbox"]:after, input[type="radio"]:after {
   position: absolute;
   content: "";
   width: 1.0rem;
@@ -163,24 +159,24 @@ input[type="checkbox"]:after {
   transition: all .2s ease-in-out;
 }
 
-input[type="checkbox"]:checked {
+input[type="checkbox"]:checked, input[type="radio"]:checked {
   border-color: #0088FF;
 }
 
 input[type="checkbox"]:checked:after {
   border-radius: 0.25rem;
   background: #0088FF;
-  background-image: url("checkmark.svg");
+  background-image: url("https://www.interordi.com/files/css/checkmark.svg");
   background-position: 0 0;
   background-size: 100% 100%;
 }
 
-input[type="checkbox"]:disabled {
+input[type="checkbox"]:disabled, input[type="radio"]:disabled {
   cursor: default;
   background: #EEEEEE;
 }
 
-input[type="checkbox"]:checked:disabled {
+input[type="checkbox"]:checked:disabled, input[type="radio"]:checked:disabled {
   border-color: #88BBFF;
   /*background: $input-disabled-marker-active-color;*/
 }
@@ -188,7 +184,7 @@ input[type="checkbox"]:checked:disabled {
 input[type="checkbox"]:checked:disabled:after {
   border-radius: 0.25rem;
   background: #88BBFF;
-  background-image: url("checkmark.svg");
+  background-image: url("https://www.interordi.com/files/css/checkmark.svg");
   background-position: 0 0;
   background-size: 100% 100%;
 }
@@ -255,55 +251,17 @@ input[type="checkbox"].toggle:checked:disabled:after {
 }
 
 input[type="radio"] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  width: 1.0rem;
-  height: 1.0rem;
-  background: #FFFFFF;
   border-radius: 50%;
-  position: relative;
-  top: -0.1rem;
-  cursor: pointer;
-  outline: none;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}
-
-input[type="radio"]:checked {
-  /*	background: $input-active-color;*/
 }
 
 input[type="radio"]:after {
-  position: absolute;
-  content: "";
-  width: 1.0rem;
-  height: 1.0rem;
   border-radius: 50%;
   -webkit-transform: scale(0.67);
           transform: scale(0.67);
-  left: -1px;
-  top: -1px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}
-
-input[type="radio"]:checked {
-  border-color: #0088FF;
 }
 
 input[type="radio"]:checked:after {
   background: #0088FF;
-}
-
-input[type="radio"]:disabled {
-  cursor: default;
-  background: #EEEEEE;
-}
-
-input[type="radio"]:checked:disabled {
-  border-color: #88BBFF;
-  /*background: $input-disabled-marker-active-color;*/
 }
 
 input[type="radio"]:checked:disabled:after {
