@@ -113,8 +113,8 @@ button:disabled, [type="button"]:disabled, [type="reset"]:disabled, [type="submi
 }
 
 [type="radio"], [type="checkbox"] {
-  width: 1.3em;
-  height: 1.3em;
+  width: 1.3em !important;
+  height: 1.3em !important;
   vertical-align: middle;
 }
 
