@@ -149,8 +149,8 @@ button:disabled, [type="button"]:disabled, [type="reset"]:disabled, [type="submi
 }
 
 [type="radio"], [type="checkbox"] {
-	width: 1.3em !important;
-	height: 1.3em !important;
+	width: 1.3em;
+	height: 1.3em;
 	vertical-align: middle;
 }
 
@@ -473,7 +473,7 @@ form.form-horizontal {
 				text-align: left;
 			}
 			
-			input {
+			input[type="text"], input[type="password"] {
 				width: 100%;
 			}
 		}
@@ -488,7 +488,7 @@ form.form-vertical {
 			padding: 0.25rem;
 		}
 
-		input {
+		input[type="text"], input[type="password"] {
 			width: 100%;
 		}
 	}
