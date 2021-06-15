@@ -424,9 +424,12 @@ form.form-horizontal .form-group label {
   }
   form.form-horizontal .form-group label {
     text-align: left;
+    display: block;
   }
-  form.form-horizontal .form-group input {
+  form.form-horizontal .form-group input[type="text"], form.form-horizontal .form-group input[type="password"] {
     width: 100%;
+    max-width: 20rem;
+    display: block;
   }
 }
 
@@ -436,8 +439,10 @@ form.form-vertical .form-group label {
   padding: 0.25rem;
 }
 
-form.form-vertical .form-group input {
+form.form-vertical .form-group input[type="text"], form.form-vertical .form-group input[type="password"] {
   width: 100%;
+  max-width: 20rem;
+  display: block;
 }
 
 .center {

@@ -471,10 +471,13 @@ form.form-horizontal {
 
 			label {
 				text-align: left;
+				display: block;
 			}
 			
 			input[type="text"], input[type="password"] {
 				width: 100%;
+				max-width: 20rem;
+				display: block;
 			}
 		}
 	}
@@ -490,6 +493,8 @@ form.form-vertical {
 
 		input[type="text"], input[type="password"] {
 			width: 100%;
+			max-width: 20rem;
+			display: block;
 		}
 	}
 }
