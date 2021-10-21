@@ -394,7 +394,8 @@ table.data_list td.nobg {
 }
 
 form.form-horizontal .form-group, form.form-vertical .form-group {
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 form.form-horizontal .form-group .form-extra, form.form-vertical .form-group .form-extra {
