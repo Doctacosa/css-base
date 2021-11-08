@@ -29,11 +29,19 @@ class IODisplayMode {
 		);
 
 		//Get the initial status - no refresh necessary
-		let isDarkDefault = window.matchMedia('(prefers-color-scheme: dark)');
-		if (isDarkDefault.matches) {
-			this.isDark = true;
-			document.getElementById('io_dark_mode').checked = true;
+		//First check existing settings, then fetch default
+		let useDark = false;
+		let isDarkSetting = localStorage.getItem('ioDarkMode');
+		if (isDarkSetting !== null) {
+			useDark = (isDarkSetting == "true");
+		} else {
+			let isDarkDefault = window.matchMedia('(prefers-color-scheme: dark)');
+			if (isDarkDefault.matches) {
+				useDark = true;
+			}
 		}
+		document.getElementById('io_dark_mode').checked = useDark;
+		this.setDarkMode(useDark);
 	}
 
 
@@ -70,7 +78,12 @@ class IODisplayMode {
 				file.disabled = true;
 			});
 		}
+
+		//Update the checkbox
 		document.getElementById('io_dark_mode').checked = this.isDark;
+
+		//Save the value for later
+		localStorage.setItem('ioDarkMode', this.isDark);
 	}
 
 
