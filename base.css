@@ -288,27 +288,27 @@ input[type="radio"]:checked:disabled:after {
   border: 1px solid #969696;
 }
 
-button.alert-primary {
+button.alert-primary, input[type="button"].alert-primary, input[type="submit"].alert-primary {
   background-color: #2266cc;
   color: white;
 }
 
-button.alert-success {
+button.alert-success, input[type="button"].alert-success, input[type="submit"].alert-success {
   background-color: #228822;
   color: white;
 }
 
-button.alert-error {
+button.alert-error, input[type="button"].alert-error, input[type="submit"].alert-error {
   background-color: #cc2222;
   color: white;
 }
 
-button.alert-warning {
+button.alert-warning, input[type="button"].alert-warning, input[type="submit"].alert-warning {
   background-color: #cc8833;
   color: white;
 }
 
-button.alert-info {
+button.alert-info, input[type="button"].alert-info, input[type="submit"].alert-info {
   background-color: #969696;
   color: white;
 }

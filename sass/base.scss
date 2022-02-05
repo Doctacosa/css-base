@@ -320,27 +320,27 @@ input[type="radio"]:checked:disabled:after {
 }
 
 
-button.alert-primary {
+button.alert-primary, input[type="button"].alert-primary, input[type="submit"].alert-primary {
 	background-color: $color-primary;
 	color: $alert-text-color;
 }
 
-button.alert-success {
+button.alert-success, input[type="button"].alert-success, input[type="submit"].alert-success  {
 	background-color: $color-success;
 	color: $alert-text-color;
 }
 
-button.alert-error {
+button.alert-error, input[type="button"].alert-error, input[type="submit"].alert-error  {
 	background-color: $color-error;
 	color: $alert-text-color;
 }
 
-button.alert-warning {
+button.alert-warning, input[type="button"].alert-warning, input[type="submit"].alert-warning  {
 	background-color: $color-warning;
 	color: $alert-text-color;
 }
 
-button.alert-info {
+button.alert-info, input[type="button"].alert-info, input[type="submit"].alert-info  {
 	background-color: $color-info;
 	color: $alert-text-color;
 }
