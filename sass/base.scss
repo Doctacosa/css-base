@@ -346,27 +346,27 @@ button.alert-info, input[type="button"].alert-info, input[type="submit"].alert-i
 }
 
 
-div.alert-primary {
+div.alert-primary, tr.alert-primary, td.alert-primary {
 	color: scale-color($color-primary, $lightness: $alert-color-adjust);
 	background-color: scale-color($color-primary, $lightness: $alert-bg-color-adjust);
 }
 
-div.alert-success {
+div.alert-success, tr.alert-success, td.alert-success {
 	color: scale-color($color-success, $lightness: $alert-color-adjust);
 	background-color: scale-color($color-success, $lightness: $alert-bg-color-adjust);
 }
 
-div.alert-error {
+div.alert-error, tr.alert-error, td.alert-error {
 	color: scale-color($color-error, $lightness: $alert-color-adjust);
 	background-color: scale-color($color-error, $lightness: $alert-bg-color-adjust);
 }
 
-div.alert-warning {
+div.alert-warning, tr.alert-warning, td.alert-warning {
 	color: scale-color($color-warning, $lightness: $alert-color-adjust);
 	background-color: scale-color($color-warning, $lightness: $alert-bg-color-adjust);
 }
 
-div.alert-info {
+div.alert-info, tr.alert-info, td.alert-info {
 	color: scale-color($color-info, $lightness: $alert-color-adjust);
 	background-color: scale-color($color-info, $lightness: $alert-bg-color-adjust);
 }

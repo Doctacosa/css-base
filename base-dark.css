@@ -313,27 +313,27 @@ button.alert-info, input[type="button"].alert-info, input[type="submit"].alert-i
   color: white;
 }
 
-div.alert-primary {
+div.alert-primary, tr.alert-primary, td.alert-primary {
   color: #8ab1ec;
   background-color: #0e2952;
 }
 
-div.alert-success {
+div.alert-success, tr.alert-success, td.alert-success {
   color: #77dd77;
   background-color: #0e360e;
 }
 
-div.alert-error {
+div.alert-error, tr.alert-error, td.alert-error {
   color: #ec8a8a;
   background-color: #520e0e;
 }
 
-div.alert-warning {
+div.alert-warning, tr.alert-warning, td.alert-warning {
   color: #e6c499;
   background-color: #523614;
 }
 
-div.alert-info {
+div.alert-info, tr.alert-info, td.alert-info {
   color: #cbcbcb;
   background-color: #3c3c3c;
 }
