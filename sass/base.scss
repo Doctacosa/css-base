@@ -281,6 +281,19 @@ input[type="checkbox"].toggle:checked:disabled:after {
 }
 
 
+input[type="checkbox"].toggle_light:after {
+	background-image: url('https://www.interordi.com/files/css/light.svg');
+	background-position: 0 0;
+	background-size: 100% 100%;
+}
+
+input[type="checkbox"].toggle_light:checked:after {
+	background-image: url('https://www.interordi.com/files/css/dark.svg');
+	background-position: 0 0;
+	background-size: 100% 100%;
+}
+
+
 input[type="radio"] {
 	border-radius: 50%;
 }

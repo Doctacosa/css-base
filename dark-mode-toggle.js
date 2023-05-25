@@ -23,8 +23,8 @@ class IODisplayMode {
 		//Prepare the toggle option
 		document.body.insertAdjacentHTML(
 			'beforeend',
-			'<div style="display: inline-block; border: 1px solid gray; border-radius: 3px;" >' + 
-			'	<label><input type="checkbox" id="io_dark_mode" onclick="IODisplayMode.toggleDarkMode()" /> Dark mode</label>' + 
+			'<div style="position: fixed; right: 10px; top: 10px; display: inline-block; background-color: rgba(0, 0, 0, 0.2); padding: 3px 0 0 0" >' + 
+			'	<label><input type="checkbox" id="io_dark_mode" class="toggle toggle_light" onclick="IODisplayMode.toggleDarkMode()" />&nbsp;Theme&nbsp;</label>' + 
 			'</div>',
 		);
 
